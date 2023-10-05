@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231004 10:47:23.312" rpa="false" schemaversion="4">
+<suite id="s1" name="Tes" source="C:\project\automation\automation by aan\belajar\tes.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231004 10:47:23.629" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<status status="PASS" starttime="20231004 10:47:23.629" endtime="20231004 10:48:04.497"/>
+</kw>
+<test id="s1-t1" name="login dengan akun valid" line="11">
+<kw name="input nomor WA valid">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>081217948205</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231004 10:48:04.500" level="INFO">Typing text '081217948205' into text field '//*[@id="username"]'.</msg>
+<msg timestamp="20231004 10:48:04.542" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231004 10:48:04.542" level="FAIL">Element with locator '//*[@id="username"]' not found.</msg>
+<status status="FAIL" starttime="20231004 10:48:04.499" endtime="20231004 10:48:04.546"/>
+</kw>
+<status status="FAIL" starttime="20231004 10:48:04.499" endtime="20231004 10:48:04.546"/>
+</kw>
+<kw name="input password valid">
+<status status="NOT RUN" starttime="20231004 10:48:04.547" endtime="20231004 10:48:04.547"/>
+</kw>
+<kw name="klik button login">
+<status status="NOT RUN" starttime="20231004 10:48:04.548" endtime="20231004 10:48:04.548"/>
+</kw>
+<status status="FAIL" starttime="20231004 10:48:04.498" endtime="20231004 10:48:04.548">Element with locator '//*[@id="username"]' not found.</status>
+</test>
+<test id="s1-t2" name="login dengan akun tidak valid" line="16">
+<kw name="input nomor WA tidak valid">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>088888880088</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231004 10:48:04.552" level="INFO">Typing text '088888880088' into text field '//*[@id="username"]'.</msg>
+<msg timestamp="20231004 10:48:04.584" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231004 10:48:04.584" level="FAIL">Element with locator '//*[@id="username"]' not found.</msg>
+<status status="FAIL" starttime="20231004 10:48:04.551" endtime="20231004 10:48:04.585"/>
+</kw>
+<status status="FAIL" starttime="20231004 10:48:04.551" endtime="20231004 10:48:04.585"/>
+</kw>
+<kw name="input password tidak valid">
+<status status="NOT RUN" starttime="20231004 10:48:04.586" endtime="20231004 10:48:04.586"/>
+</kw>
+<kw name="klik button login">
+<status status="NOT RUN" starttime="20231004 10:48:04.587" endtime="20231004 10:48:04.587"/>
+</kw>
+<status status="FAIL" starttime="20231004 10:48:04.550" endtime="20231004 10:48:04.587">Element with locator '//*[@id="username"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20231004 10:47:23.314" endtime="20231004 10:48:04.588"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Tes">Tes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
